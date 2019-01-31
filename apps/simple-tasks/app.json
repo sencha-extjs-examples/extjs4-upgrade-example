@@ -1,0 +1,12 @@
+{
+    "name": "SimpleTasks",
+
+    "requires": [
+        "ux"
+    ],
+
+    "classpath": ["app"],
+    "overrides": ["overrides"],
+
+    "id": "1ff1477c-4095-48ba-acf6-b2eb80b1f823"
+}
