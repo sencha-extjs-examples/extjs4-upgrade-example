@@ -33,12 +33,16 @@ Ext.define('SimpleTasks.view.Viewport', {
             items: [
                 {
                     xtype: 'grid',
-                    multiSelect: true
+                    title: 'Test Grid',
+                    multiSelect: true,
+                    columns: [{
+                        text: 'Header1'
+                    }]
                 },
                 {
                     xtype: 'component',
                     title: 'Tab (should auto load)',
-                    loader: {url: 'resources/html/MyCustomComponent.html'}
+                    autoLoad: 'resources/html/MyCustomComponent.html'
                 },
                 {
                     xtype: 'panel',
@@ -101,7 +105,7 @@ Ext.define('SimpleTasks.view.Viewport', {
                             }
                         ]
                     }],
-                    loader: {
+                    autoLoad: {
                         url: 'resources/html/MyCustomComponent.html'
                     }
                 }
